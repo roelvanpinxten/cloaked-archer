@@ -1,0 +1,11 @@
+.table-vcenter td {
+    vertical-align: middle!important;
+}
+
+.container {
+    margin-top:15px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
