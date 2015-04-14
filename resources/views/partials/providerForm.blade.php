@@ -4,7 +4,8 @@
 </div>
 <div class="form-group">
     {!! Form::label('type', 'Type: ') !!}
-    {!! Form::text('type', null, ['class' => 'form-control']) !!}
+    {!! Form::select('type', null, ['class' => 'form-control']) !!}
+    <!--select($name, $list = array(), $selected = null, $options = array())-->
 </div>
 <div class="form-group">
     {!! Form::label('name', 'Naam: ') !!}
