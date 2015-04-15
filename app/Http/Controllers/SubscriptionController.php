@@ -2,7 +2,9 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\SubscriptionRequest;
 
+use App\subscription;
 use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller {
@@ -14,7 +16,8 @@ class SubscriptionController extends Controller {
 	 */
 	public function index()
 	{
-		//
+        $subscriptionItems = subscription::latest()->get();
+        return view('subscription.index', compact('subscriptionItems'));
 	}
 
 	/**
@@ -24,7 +27,7 @@ class SubscriptionController extends Controller {
 	 */
 	public function create()
 	{
-		//
+        return view('subscription.create');
 	}
 
 	/**
@@ -32,9 +35,13 @@ class SubscriptionController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(SubscriptionRequest $request)
 	{
 		//
+
+        subscription::create($request->all());
+
+        return redirect('subscription');
 	}
 
 	/**

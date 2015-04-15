@@ -12,7 +12,14 @@
             <li><a href="/provider">Alle providers</a></li>
         </ul>
     </li>
-    <li class=""><a href="/subscription">Subscriptions</a></li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/provider">Proposities
+            <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/subscription/create">Toevoegen</a></li>
+            <li><a href="/subscription">Alle proposities</a></li>
+        </ul>
+    </li>
     <li class="dropdown pull-right">
         <a class="dropdown-toggle" data-toggle="dropdown" href="/provider">Account
             <span class="caret"></span></a>

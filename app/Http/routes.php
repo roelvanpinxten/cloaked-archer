@@ -17,7 +17,7 @@ Route::get('home', 'PagesController@home');
 
 Route::resource('provider', 'ProviderController');
 
-Route::resource('subscriptions', 'SubscriptionController');
+Route::resource('subscription', 'SubscriptionController');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
