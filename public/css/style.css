@@ -9,3 +9,7 @@
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+tr.clickable-row {
+    cursor: pointer;
+}

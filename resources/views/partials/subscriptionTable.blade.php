@@ -9,14 +9,12 @@
     </thead>
     <tbody>
     @foreach($subscriptionItems as $subscription)
-        <a href="/subscription/{{ $subscription->id }}/edit">
-            <tr onclick="">
-                <td>{{ $subscription->provider_name }}</td>
-                <td>{{ $subscription->handset_name }}</td>
-                <td>{{ $subscription->subscription_name }}</td>
-                <td>{{ $subscription->valid_until }}</td>
-            </tr>
-        </a>
+        <tr class="clickable-row" onclick="window.document.location='/subscription/{{ $subscription->id }}/edit';">
+            <td>{{ $subscription->provider_name }}</td>
+            <td>{{ $subscription->handset_name }}</td>
+            <td>{{ $subscription->subscription_name }}</td>
+            <td>{{ $subscription->valid_until }}</td>
+        </tr>
     @endforeach
     </tbody>
 </table>

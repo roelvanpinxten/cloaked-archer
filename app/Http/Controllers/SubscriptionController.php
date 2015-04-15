@@ -61,21 +61,22 @@ class SubscriptionController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
-	{
-		//
-	}
+    public function edit($id)
+    {
+        $subscription = subscription::findOrFail($id);
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
+        return view('subscription.edit', compact('subscription'));
+    }
+
+
+    public function update($id, SubscriptionRequest $request)
+    {
+        $subscription = subscription::findOrFail($id);
+
+        $subscription->update($request->all());
+
+        return redirect('subscription');
+    }
 
 	/**
 	 * Remove the specified resource from storage.
