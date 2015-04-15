@@ -51,8 +51,12 @@
     {!! Form::text('handset_price_with_subscription', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
-    {!! Form::label('valid_until', 'Geldig t/m: ') !!}
-    {!! Form::input('date', 'valid_until', date('Y-m-d'), ['class' => 'form-control']) !!}
+    {!! Form::label('wposid', 'WposID: ') !!}
+    {!! Form::text('wposid', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::label('valid_until', 'Actief t/m: ') !!}
+    {!! Form::input('date', 'valid_until', $subscription->valid_until->format('d-m-Y'), ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
     {!! Form::submit($submitButtonText, ['class' => 'btn btn-primary form-control']) !!}

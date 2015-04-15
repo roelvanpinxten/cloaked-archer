@@ -4,7 +4,7 @@
         <th>Provider</th>
         <th>Handset</th>
         <th>Propositie naam</th>
-        <th>Geldig T/M</th>
+        <th>Actief t/m</th>
     </tr>
     </thead>
     <tbody>
@@ -13,7 +13,7 @@
             <td>{{ $subscription->provider_name }}</td>
             <td>{{ $subscription->handset_name }}</td>
             <td>{{ $subscription->subscription_name }}</td>
-            <td>{{ $subscription->valid_until }}</td>
+            <td>{{ $subscription->valid_until->format('d-m-Y') }}</td>
         </tr>
     @endforeach
     </tbody>

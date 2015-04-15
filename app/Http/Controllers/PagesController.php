@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Requests\CreateProviderRequest;
 use App\Http\Controllers\Controller;
 use App\provider;
+use App\subscription;
 //use Illuminate\Database\Query;
 
 
@@ -16,9 +17,12 @@ class PagesController extends Controller {
         return view('pages.home');
     }
 
-    public function dixons()
+    public function dixons($id)
     {
-        return view('pages.dixons');
+        $subscription = subscription::findOrFail($id);
+
+       return view('pages.dixons', compact('subscription'));
+
     }
 
 

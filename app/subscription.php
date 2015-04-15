@@ -19,6 +19,7 @@ class subscription extends Model {
         'month_price_subscription',
         'handset_price_without_subscription',
         'handset_price_with_subscription',
+        'wposid',
         'valid_until'
     ];
 
@@ -29,4 +30,8 @@ class subscription extends Model {
         $this->attributes['valid_until'] =Carbon::parse($date);
     }
 
+    public function getValidUntilAttribute($date)
+    {
+        return new Carbon($date);
+    }
 }

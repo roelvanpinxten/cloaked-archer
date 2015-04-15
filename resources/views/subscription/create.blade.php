@@ -9,7 +9,7 @@
     <h1>Voeg een nieuwe propositie toe</h1>
 
     <hr/>
-    {!! Form::open(['url' => 'subscription']) !!}
+    {!! Form::model($subscription = new \App\Subscription, ['url' => 'subscription']) !!}
         @include('partials.subscriptionForm', ['submitButtonText'  => 'Toevoegen'])
     {!! Form::close() !!}
 
