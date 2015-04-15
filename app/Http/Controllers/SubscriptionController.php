@@ -2,7 +2,9 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\SubscriptionRequest;
 
+use App\subscription;
 use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller {
@@ -14,6 +16,7 @@ class SubscriptionController extends Controller {
 	 */
 	public function index()
 	{
+        $subscriptionItems = subscription::latest()->get();
         return view('subscription.index', compact('subscriptionItems'));
 	}
 
@@ -24,7 +27,7 @@ class SubscriptionController extends Controller {
 	 */
 	public function create()
 	{
-		//
+        return view('subscription.create');
 	}
 
 	/**
@@ -32,9 +35,13 @@ class SubscriptionController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(SubscriptionRequest $request)
 	{
 		//
+
+        subscription::create($request->all());
+
+        return redirect('subscription');
 	}
 
 	/**
@@ -54,21 +61,22 @@ class SubscriptionController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
-	{
-		//
-	}
+    public function edit($id)
+    {
+        $subscription = subscription::findOrFail($id);
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
+        return view('subscription.edit', compact('subscription'));
+    }
+
+
+    public function update($id, SubscriptionRequest $request)
+    {
+        $subscription = subscription::findOrFail($id);
+
+        $subscription->update($request->all());
+
+        return redirect('subscription');
+    }
 
 	/**
 	 * Remove the specified resource from storage.

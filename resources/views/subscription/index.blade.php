@@ -7,7 +7,8 @@
 @section('content')
 
     <div class="container">
-        <p>Alle Subsctiptions.</p>
-     </div>
+        <p>Alle proposities.</p>
+        @include('partials.subscriptionTable')
+    </div>
 
 @stop()

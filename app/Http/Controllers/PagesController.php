@@ -16,6 +16,10 @@ class PagesController extends Controller {
         return view('pages.home');
     }
 
+    public function dixons()
+    {
+        return view('pages.dixons');
+    }
 
 
 }
