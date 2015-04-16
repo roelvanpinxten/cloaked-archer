@@ -18,6 +18,7 @@
         <ul class="dropdown-menu">
             <li><a href="/subscription/create">Toevoegen</a></li>
             <li><a href="/subscription">Alle proposities</a></li>
+            <li><a href="/dixons/">Creëer HTML</a></li>
         </ul>
     </li>
     <li class="dropdown pull-right">

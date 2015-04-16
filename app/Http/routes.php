@@ -16,6 +16,7 @@ Route::get('/', 'PagesController@home');
 Route::get('home', 'PagesController@home');
 
 Route::get('dixons/{subscription}', 'PagesController@dixons');
+Route::get('dixons', 'PagesController@dixonsAll');
 
 Route::resource('provider', 'ProviderController');
 

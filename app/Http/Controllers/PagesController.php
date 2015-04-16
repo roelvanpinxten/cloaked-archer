@@ -25,6 +25,14 @@ class PagesController extends Controller {
 
     }
 
+    public function dixonsAll()
+    {
+        $subscription = subscription::all();
+
+        return view('pages.dixonsAll', compact('subscription'));
+
+    }
+
 
 }
 
