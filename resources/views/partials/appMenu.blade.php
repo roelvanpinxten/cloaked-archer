@@ -1,7 +1,7 @@
 <ul class="nav nav-tabs">
-    <li @if ($activeMenu == "home") class="active" @endif ><a href="#">Home</a></li>
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/provider">Providers
+    <li @if ($activeMenu == "home")class="active dropdown" @endif><a href="/">Home</a></li>
+    <li @if ($activeMenu == "provider")class="active dropdown" @else class="dropdown"  @endif>
+        <a class="dropdown-toggle" href="/provider">Providers
             <span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="/provider/Tele2">Tele2</a></li>
@@ -12,8 +12,8 @@
             <li><a href="/provider">Alle providers</a></li>
         </ul>
     </li>
-    <li  @if ($activeMenu == "subscription") class="active" @endif class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/provider">Proposities
+    <li  @if ($activeMenu == "subscription") class="active dropdown" @else class="dropdown"  @endif>
+        <a class="dropdown-toggle"  href="/subscription">Proposities
             <span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="/subscription/create">Toevoegen</a></li>
@@ -22,7 +22,7 @@
         </ul>
     </li>
     <li class="dropdown pull-right">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/provider">
+        <a class="dropdown-toggle" href="/login">
             @if (Auth::user() != null) Ingelogd als: {{ Auth::user()->name }} @else Login @endif
             <span class="caret"></span>
         </a>
