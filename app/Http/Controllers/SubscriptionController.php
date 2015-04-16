@@ -5,9 +5,15 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\SubscriptionRequest;
 
 use App\subscription;
+use App\User;
 use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 	/**
 	 * Display a listing of the resource.

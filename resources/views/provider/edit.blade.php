@@ -1,7 +1,7 @@
 @extends('app')
 
 @section ('menu')
-    @include('partials.appMenu')
+    @include('partials.appMenu', ['activeMenu'  => 'provider'])
 @stop()
 
 @section('content')

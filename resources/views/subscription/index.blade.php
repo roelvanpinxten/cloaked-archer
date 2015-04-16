@@ -1,13 +1,13 @@
 @extends('app')
 
 @section ('menu')
-    @include('partials.appMenu')
+    @include('partials.appMenu', ['activeMenu'  => 'subscription'])
 @stop()
 
 @section('content')
 
     <div class="container">
-        <p>Alle proposities.</p>
+        <h4>Alle proposities</h4>
         @include('partials.subscriptionTable')
     </div>
 
