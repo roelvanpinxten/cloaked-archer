@@ -6,7 +6,7 @@
 
 @section('content')
 
-<h1>Tele2</h1>
+<h2>Tele2</h2>
 
 @foreach ($subscription as $sub)
     @if ($sub->provider_name == "Tele2")

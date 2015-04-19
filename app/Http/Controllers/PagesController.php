@@ -3,8 +3,8 @@
 use App\Http\Requests;
 use App\Http\Requests\CreateProviderRequest;
 use App\Http\Controllers\Controller;
-use App\provider;
-use App\subscription;
+use App\Provider;
+use App\Subscription;
 //use Illuminate\Database\Query;
 
 
@@ -25,7 +25,7 @@ class PagesController extends Controller {
 
     public function dixons($id)
     {
-        $subscription = subscription::findOrFail($id);
+        $subscription = Subscription::findOrFail($id);
 
        return view('pages.dixons', compact('subscription'));
 
@@ -33,7 +33,7 @@ class PagesController extends Controller {
 
     public function dixonsAll()
     {
-        $subscription = subscription::all();
+        $subscription = Subscription::all();
 
         return view('pages.dixonsAll', compact('subscription'));
 

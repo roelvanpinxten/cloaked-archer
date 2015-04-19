@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SubscriptionRequest;
 
-use App\subscription;
+use App\Subscription;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -22,7 +22,7 @@ class SubscriptionController extends Controller {
 	 */
 	public function index()
 	{
-        $subscriptionItems = subscription::latest()->get();
+        $subscriptionItems = Subscription::latest()->get();
         return view('subscription.index', compact('subscriptionItems'));
 	}
 
@@ -45,7 +45,7 @@ class SubscriptionController extends Controller {
 	{
 		//
 
-        subscription::create($request->all());
+        Subscription::create($request->all());
 
         return redirect('subscription');
 	}
@@ -69,7 +69,7 @@ class SubscriptionController extends Controller {
 	 */
     public function edit($id)
     {
-        $subscription = subscription::findOrFail($id);
+        $subscription = Subscription::findOrFail($id);
 
         return view('subscription.edit', compact('subscription'));
     }
@@ -77,7 +77,7 @@ class SubscriptionController extends Controller {
 
     public function update($id, SubscriptionRequest $request)
     {
-        $subscription = subscription::findOrFail($id);
+        $subscription = Subscription::findOrFail($id);
 
         $subscription->update($request->all());
 
