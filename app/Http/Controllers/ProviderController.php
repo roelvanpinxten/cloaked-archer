@@ -48,7 +48,7 @@ class ProviderController extends Controller {
 
     public function edit($id)
     {
-        $provider = Provider::findOrFail($id);Provider::
+        $provider = Provider::findOrFail($id);
 
         return view('provider.edit', compact('provider'));
     }
