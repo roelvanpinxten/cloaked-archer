@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 
-class provider extends Model {
+class Provider extends Model {
 
 	protected $fillable = [
         'provider',

@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 
-class subscription extends Model {
+class Subscription extends Model {
 
     protected $fillable = [
         'handset_name',
