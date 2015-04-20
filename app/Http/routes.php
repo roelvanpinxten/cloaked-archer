@@ -18,9 +18,10 @@ Route::get('home', 'PagesController@home');
 Route::get('dixons/{subscription}', 'PagesController@dixons');
 Route::get('dixons', 'PagesController@dixonsAll');
 
-Route::resource('provider', 'ProviderController');
 
+Route::resource('provider', 'ProviderController');
 Route::resource('subscription', 'SubscriptionController');
+Route::resource('excel', 'ExcelController');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
