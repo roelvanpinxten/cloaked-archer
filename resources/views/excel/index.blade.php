@@ -7,7 +7,7 @@
 @section('content')
 
     <div class="container">
-        <p>{{ $results   }}</p>
+        <p>asfasdfasdf</p>
     </div>
 
 @stop()

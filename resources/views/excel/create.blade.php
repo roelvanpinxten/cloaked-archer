@@ -9,7 +9,7 @@
     <h1>Voeg een nieuw abonnement of bundel toe</h1>
 
     <hr/>
-    {!! Form::open(['url' => 'excel', 'role' => 'form']) !!}
+    {!! Form::open(['url' => 'excel', 'role' => 'form', 'enctype' => 'multipart/form-data']) !!}
         @include('excel.partials.form', ['submitButtonText'  => 'Uploaden'])
     {!! Form::close() !!}
 

@@ -1,5 +1,5 @@
 <div class="form-group">
-    {!! Form::label('provider_name', 'Provider: ') !!}
+    {!! Form::label('excel', 'Provider: ') !!}
     {!! Form::file('excel', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">

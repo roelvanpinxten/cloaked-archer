@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ExcelRequest;
+use Maatwebsite\Excel\Excel;
 
 use Illuminate\Http\Request;
 
@@ -40,16 +41,12 @@ class ExcelController extends Controller {
 	 */
 	public function store(ExcelRequest $request)
 	{
-        Excel::load(Input::file('excel'), function($reader) {
-
-        // Getting all results
-        $results = $reader->get();
-
-
-
-         });
-        return redirect('excel', compact($results));
-	}
+        \Excel::load(\Request::file('excel'), function($reader) {
+            $results = $reader->first();
+            \Session::flash('flash_message',$results);
+        });
+        return redirect('excel');
+    }
 
 	/**
 	 * Display the specified resource.
