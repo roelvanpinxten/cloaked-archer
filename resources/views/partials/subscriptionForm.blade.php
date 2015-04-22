@@ -56,7 +56,7 @@
 </div>
 <div class="form-group">
     {!! Form::label('valid_until', 'Actief t/m: ') !!}
-    {!! Form::input('date', 'valid_until', $subscription->valid_until->format('d-m-Y'), ['class' => 'form-control']) !!}
+    {!! Form::input('date', 'valid_until', $subscription->valid_until, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
     {!! Form::submit($submitButtonText, ['class' => 'btn btn-primary form-control']) !!}
