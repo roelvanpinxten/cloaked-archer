@@ -20,10 +20,12 @@ Route::get('dixons', 'PagesController@dixonsAll');
 
 
 Route::resource('provider', 'ProviderController');
+
+Route::get('subscription/download', 'SubscriptionController@download');
+Route::get('subscription/upload', 'SubscriptionController@upload');
+Route::post('subscription/upload/store', 'SubscriptionController@storeUpload');
 Route::resource('subscription', 'SubscriptionController');
 
-Route::get('excel/download', 'ExcelController@download');
-Route::resource('excel', 'ExcelController');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

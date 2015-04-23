@@ -16,8 +16,10 @@
         <a class="dropdown-toggle"  href="/subscription">Proposities
             <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="/subscription/create">Toevoegen</a></li>
-            <li><a href="/subscription">Alle proposities</a></li>
+            <li><a href="/subscription/create">Handmatig</a></li>
+            <li><a href="/subscription/download">Download Sheet</a></li>
+            <li><a href="/subscription/upload">Upload Sheet</a></li>
+            <li><a href="/subscription">Overzicht</a></li>
             <li><a href="/dixons/">Creëer HTML</a></li>
         </ul>
     </li>
