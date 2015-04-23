@@ -21,6 +21,8 @@ Route::get('dixons', 'PagesController@dixonsAll');
 
 Route::resource('provider', 'ProviderController');
 Route::resource('subscription', 'SubscriptionController');
+
+Route::get('excel/download', 'ExcelController@download');
 Route::resource('excel', 'ExcelController');
 
 Route::controllers([

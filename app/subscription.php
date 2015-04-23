@@ -27,11 +27,11 @@ class Subscription extends Model {
 
     public function setValidUntilAttribute($date)
     {
-        $this->attributes['valid_until'] =Carbon::parse($date);
+        $this->attributes['valid_until'] = Carbon::parse($date);
     }
 
     public function getValidUntilAttribute($date)
     {
-        return new Carbon($date);
+        return Carbon::parse($date)->format('d-m-Y');
     }
 }

@@ -22,6 +22,11 @@ class ExcelController extends Controller {
 	 * @return Response
 	 */
 	public function index()
+    {
+        return view('excel.index');
+    }
+
+    public function download()
 	{
             $model = Subscription::get([
                 'handset_name',
@@ -59,7 +64,7 @@ class ExcelController extends Controller {
 	 */
 	public function create()
 	{
-        return view('excel.create');
+        //
 	}
 
 	/**
