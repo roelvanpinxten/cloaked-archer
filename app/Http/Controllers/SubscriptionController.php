@@ -116,15 +116,15 @@ class SubscriptionController extends Controller {
             'valid_until'
         ]);
 
-        return \Excel::create('Filename', function($excel) use($model) {
+        return \Excel::create('Proposities', function($excel) use($model) {
 
             $excel->sheet('Proposities', function($sheet) use($model) {
 
-                $sheet->fromModel($model);
+                $sheet->fromModel($model, null, 'A1', true);
                 $sheet->freezeFirstRow();
             });
 
-        })->download('xls');
+        })->download('xlsx');
     }
 
     public function upload()
