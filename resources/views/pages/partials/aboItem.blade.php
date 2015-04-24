@@ -6,7 +6,7 @@
         <img src="https://www.dixons.nl//images/110/150/0/{{ $sub->wposid }}.png">
     </div>
     <div class="phonePrice">
-        <span class="vanPrice">	{{$sub->month_price_total}} </span>
+        <span class="vanPrice">	@if($sub->month_price_total <> 0){{$sub->month_price_total}}@endif </span>
         <br>
                      <span class="voorPrice">{{split_number_int($sub->month_price_action)}}@if(split_number_fraction($sub->month_price_action) == 0).-
                          @else<span>.{{split_number_fraction($sub->month_price_action)}}</span>
