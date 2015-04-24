@@ -1,3 +1,17 @@
+<?php
+    function split_number_int ( $string )
+    {
+        $number = explode( '.', $string );
+        return trim( $number[0] );
+    }
+
+    function split_number_fraction ( $string )
+    {
+        $number = explode( '.', $string );
+        return trim( $number[1] );
+    }
+?>
+
 @extends('app')
 
 @section ('menu')
@@ -7,133 +21,29 @@
 @section('content')
 
 <h2>Tele2</h2>
-
+<div class="aboBody">
 @foreach ($subscription as $sub)
     @if ($sub->provider_name == "Tele2")
-    <div class="aboItem">
-        <div class="phoneName">
-           {{ $sub->handset_name }}
-        </div>
-        <div class="phoneImg">
-            <img src="https://www.dixons.nl/uploads/category/telecom/phoneimages/{{ $sub->wposid }}.png">
-        </div>
-        <div class="phonePrice">
-            <span class="vanPrice">	{{ $sub->month_price_total }} </span>
-            <br>
-            <span class="voorPrice"> {{ $sub->month_price_action }}</span><span class="pmnd"> p/mnd </span>
-            <span class="bijbetaling">Bijbetaling: {{ $sub->handset_price_with_subscription }}.- </span>
-            <img src="https://www.dixons.nl/uploads/category/telecom/line.png">
-        </div>
-        <div class="aboSpecs">
-                <span class="aboType">
-                    {{ $sub->provider_name }} {{ $sub->subscription_name }}
-                </span>
-            <ul>
-                <li>
-                    - {{ $sub->subscription_minutes }}
-                </li>
-                <li>
-                    - <b>{{ $sub->subscription_data }}</b>
-                </li>
-                <li>
-                    - {{ $sub->subscription_duration }}
-                </li>
-
-                    <!--// If the there is no handset price do not show. -->
-                    @if ($sub->month_price_handset > 0)
-                        <li>
-                            - Abonnement {{ $sub->month_price_subscription }}.- p/mnd
-                        </li>
-                        <li>
-                            - Maandbedrag telefoon {{ $sub->month_price_handset }}.- p/mnd
-                        </li>
-                    @endif
-
-                <li>
-                    - Aansluitkosten {{ $sub->connection_fee }}
-                </li>
-            </ul>
-                <span class="phoneLosPrice">
-                    Los toestel 8GB voor {{ $sub->handset_price_without_subscription }}.-
-                </span>
-            <div class="afhaal-button">
-                <a class="winkelmandjeButton" href="/apple/iphone/iphone-5c">
-                    AFHALEN IN EEN WINKEL
-                </a>
-            </div>
-                <span class="extraInfo">
-                    &nbsp;&nbsp;&nbsp;&nbsp;Abonnementen alleen in onze winkels.
-                    <br>
-                    Reserveer je nieuwe smartphone bij jouw dixons.
-                </span>
-        </div>
-    </div>
+        @include('pages.partials.aboItem')
     @endif
 @endforeach
+</div>
 
 <h1 style="clear:both;">KPN</h1>
-
+<div class="aboBody">
 @foreach ($subscription as $sub)
     @if ($sub->provider_name == "KPN")
-        <div class="aboItem">
-            <div class="phoneName">
-                {{ $sub->handset_name }}
-            </div>
-            <div class="phoneImg">
-                <img src="https://www.dixons.nl/uploads/category/telecom/phoneimages/{{ $sub->wposid }}.png">
-            </div>
-            <div class="phonePrice">
-                <span class="vanPrice">	{{ $sub->month_price_total }} </span>
-                <br>
-                <span class="voorPrice"> {{ $sub->month_price_action }}</span><span class="pmnd"> p/mnd </span>
-                <span class="bijbetaling">Bijbetaling: {{ $sub->handset_price_with_subscription }}.- </span>
-                <img src="https://www.dixons.nl/uploads/category/telecom/line.png">
-            </div>
-            <div class="aboSpecs">
-                <span class="aboType">
-                    {{ $sub->provider_name }} {{ $sub->subscription_name }}
-                </span>
-                <ul>
-                    <li>
-                        - {{ $sub->subscription_minutes }}
-                    </li>
-                    <li>
-                        - <b>{{ $sub->subscription_data }}</b>
-                    </li>
-                    <li>
-                        - {{ $sub->subscription_duration }}
-                    </li>
-
-                    <!--// If the there is no handset price do not show. -->
-                    @if ($sub->month_price_handset > 0)
-                        <li>
-                            - Abonnement {{ $sub->month_price_subscription }}.- p/mnd
-                        </li>
-                        <li>
-                            - Maandbedrag telefoon {{ $sub->month_price_handset }}.- p/mnd
-                        </li>
-                    @endif
-
-                    <li>
-                        - Aansluitkosten {{ $sub->connection_fee }}
-                    </li>
-                </ul>
-                <span class="phoneLosPrice">
-                    Los toestel 8GB voor {{ $sub->handset_price_without_subscription }}.-
-                </span>
-                <div class="afhaal-button">
-                    <a class="winkelmandjeButton" href="/apple/iphone/iphone-5c">
-                        AFHALEN IN EEN WINKEL
-                    </a>
-                </div>
-                <span class="extraInfo">
-                    &nbsp;&nbsp;&nbsp;&nbsp;Abonnementen alleen in onze winkels.
-                    <br>
-                    Reserveer je nieuwe smartphone bij jouw dixons.
-                </span>
-            </div>
-        </div>
+        @include('pages.partials.aboItem')
     @endif
 @endforeach
+</div>
 
+<h1 style="clear:both;">T-Mobile</h1>
+<div class="aboBody">
+@foreach ($subscription as $sub)
+    @if ($sub->provider_name == "T-Mobile")
+        @include('pages.partials.aboItem')
+    @endif
+@endforeach
+</div>
 @stop()
