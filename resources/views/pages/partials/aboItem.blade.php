@@ -51,7 +51,7 @@
                     Los toestel voor {{split_number_int($sub->handset_price_without_subscription)}}@if(split_number_fraction($sub->handset_price_without_subscription) == 0).-
                     @else.{{split_number_fraction($sub->handset_price_without_subscription)}}</span>
                     @endif
-                
+
         <div class="afhaal-button">
             <a class="winkelmandjeButton" href="http://www.dixons.nl/catalog/search/?q={{ $sub->wposid }}">
                 AFHALEN IN EEN WINKEL
