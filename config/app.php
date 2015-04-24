@@ -137,6 +137,8 @@ return [
 		'Illuminate\View\ViewServiceProvider',
         'Illuminate\Html\HtmlServiceProvider',
 
+
+
 		/*
 		 * Application Service Providers...
 		 */
@@ -145,7 +147,8 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-
+        'Laracasts\Flash\FlashServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider',
 	],
 
 	/*
@@ -195,6 +198,8 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form'      => 'Illuminate\Html\FormFacade',
         'Html'      => 'Illuminate\Html\HtmlFacade',
+        'Excel'     => 'Maatwebsite\Excel\Facades\Excel',
+        'Flash'     => 'Laracasts\Flash\Flash',
 
 	],
 

@@ -13,7 +13,7 @@
             <td>{{ $subscription->provider_name }}</td>
             <td>{{ $subscription->handset_name }}</td>
             <td>{{ $subscription->subscription_name }}</td>
-            <td>{{ $subscription->valid_until->format('d-m-Y') }}</td>
+            <td>{{ $subscription->valid_until }}</td>
         </tr>
     @endforeach
     </tbody>

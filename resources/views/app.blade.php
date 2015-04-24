@@ -8,16 +8,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
 
 <div class="container">
     @yield('menu')
+
+    @include('partials.flash')
+
     @yield('content')
 </div>
-    <div class="container">
-        @yield('footer')
-    </div>
+<div class="container">
+    @yield('footer')
+</div>
+
+<script>
+    $('div.alert').not('.alert-danger').delay(2000).slideUp(300);
+</script>
 
 </body>
 </html>

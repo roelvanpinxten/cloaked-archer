@@ -6,9 +6,7 @@
 
 @section('content')
 
-    <div class="container">
         <h4>Alle proposities</h4>
         @include('partials.subscriptionTable')
-    </div>
 
 @stop()

@@ -18,9 +18,14 @@ Route::get('home', 'PagesController@home');
 Route::get('dixons/{subscription}', 'PagesController@dixons');
 Route::get('dixons', 'PagesController@dixonsAll');
 
+
 Route::resource('provider', 'ProviderController');
 
+Route::get('subscription/download', 'SubscriptionController@download');
+Route::get('subscription/upload', 'SubscriptionController@upload');
+Route::post('subscription/upload/store', 'SubscriptionController@storeUpload');
 Route::resource('subscription', 'SubscriptionController');
+
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

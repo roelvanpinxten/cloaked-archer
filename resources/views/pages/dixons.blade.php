@@ -3,7 +3,7 @@
        {{ $subscription->handset_name }}
     </div>
     <div class="phoneImg">
-        <img src="/uploads/category/telecom/phoneimages/{{ $subscription->wposid }}.png">
+        <img src="https://www.dixons.nl//images/350/350/0/{{ $sub->wposid }}.png">
     </div>
     <div class="phonePrice">
         <span class="vanPrice">	{{ $subscription->month_price_total }} </span>
