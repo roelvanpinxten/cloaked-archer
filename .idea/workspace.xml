@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85348b90-5f54-4089-9759-e8e51960b53f" name="Default" comment="Registration Page only visible for logged in users&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/partials/aboItem.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/partials/aboItem.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/dixonsAll.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/dixonsAll.blade.php" />
+    <list default="true" id="85348b90-5f54-4089-9759-e8e51960b53f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2015_04_27_184733_create_article_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/ArticleRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Articles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/partials/articlesForm.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/partials/articlesTable.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/partials/form.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/articles/upload.blade.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\cloaked-archer\resources\views\pages\dixonsAll.blade.php" afterPath="$PROJECT_DIR$/resources/views/subscription/createHTML.blade.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\cloaked-archer\resources\views\pages\partials\aboItem.blade.php" afterPath="$PROJECT_DIR$/resources/views/subscription/partials/aboItem.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/partials/appMenu.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/appMenu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="telecom.iws" />
@@ -35,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="aboItem.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/partials/aboItem.blade.php">
+      <file leaf-file-name="articlesForm.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/articles/partials/articlesForm.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24347825" vertical-offset="0" max-vertical-offset="1988">
-              <caret line="8" column="98" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
+            <state vertical-scroll-proportion="0.6790831" vertical-offset="534" max-vertical-offset="1232">
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -53,17 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_04_15_055626_create_subscriptions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_04_15_200258_create_subscriptions_wposid_column.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/subscription/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-        <option value="$PROJECT_DIR$/resources/views/provider/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/provider/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/provider/show.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/provider.php" />
         <option value="$PROJECT_DIR$/app/Provider.php" />
@@ -86,17 +89,14 @@
         <option value="$PROJECT_DIR$/resources/views/excel/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/subscriptionForm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/providerForm.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/appMenu.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ExcelController.php" />
         <option value="$PROJECT_DIR$/resources/views/subscription/partials/form.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/subscription/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/subscription/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/subscription/upload.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/flash.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_04_24_075900_change_subscriptions_int_to_decimal.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/dixons.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
@@ -104,6 +104,20 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/dixonsAll.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/partials/aboItem.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/subscription/partials/aboItem.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/articles/upload.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/ArticleRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/articles/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/appMenu.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Articles.php" />
+        <option value="$PROJECT_DIR$/resources/views/articles/partials/articlesTable.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_04_27_184733_create_article_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/articles/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/articles/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/articles/partials/articlesForm.blade.php" />
       </list>
     </option>
   </component>
@@ -243,29 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="telecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloaked-archer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="subscription" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -291,7 +283,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="telecom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloaked-archer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="telecom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloaked-archer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -413,55 +453,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Middleware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="telecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloaked-archer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="telecom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloaked-archer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,7 +463,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="aboItem&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/pages/partials/aboItem.blade.php&#10;dixonsall&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/pages/dixonsAll.blade.php&#10;auth.register&#9;null&#9;null&#10;registrar&#9;null&#9;null&#10;app.b&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/app.blade.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/config/app.php&#10;sub&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;excel&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ExcelController.php&#10;getValidUntilAttribute&#9;null&#9;null&#10;exce&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ExcelController.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/routes.php&#10;ExcelFile &#9;null&#9;null&#10;provi&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;excelcontr&#9;null&#9;null&#10;pagescon&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/PagesController.php&#10;al&#9;null&#9;null&#10;alia&#9;null&#9;null&#10;facade&#9;null&#9;null&#10;faca&#9;null&#9;null&#10;Subscription&#9;null&#9;null&#10;App\Subscription&#9;null&#9;null&#10;use App\provider&#9;null&#9;null&#10;App\subscription&#9;null&#9;null&#10;subscription&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;s&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;dixons&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/pages/dixonsAll.blade.php&#10;pages&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/PagesController.php&#10;provider&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;user&#9;null&#9;null&#10;controll&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;PagesController&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/PagesController.php&#10;menu&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/partials/appMenu.blade.php&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/routes.php&#10;SubscriptionController&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;form&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/partials/subscriptionForm.blade.php&#10;ProviderRequest&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Requests/ProviderRequest.php&#10;controller&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;Blueprint&#9;null&#9;null&#10;Schema&#9;null&#9;null&#10;ProviderController&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;subscrip&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;subs&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;auth&#9;null&#9;null&#10;prov&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;sty&#9;FILE&#9;file://C:/xampp/htdocs/telecom/public/css/style.css&#10;styl&#9;FILE&#9;file://C:/xampp/htdocs/telecom/public/css/style.css&#10;builder&#9;null&#9;null&#10;model&#9;FILE&#9;file://C:/xampp/htdocs/telecom/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&#10;edit&#9;FILE&#9;file://C:/xampp/htdocs/telecom/resources/views/provider/edit.blade.php&#10;crea&#9;FILE&#9;file://C:/xampp/htdocs/telecom/resources/views/provider/create.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="ExcelRequest&#9;null&#9;null&#10;aboItem&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/pages/partials/aboItem.blade.php&#10;dixonsall&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/pages/dixonsAll.blade.php&#10;auth.register&#9;null&#9;null&#10;registrar&#9;null&#9;null&#10;app.b&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/app.blade.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/config/app.php&#10;sub&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;excel&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ExcelController.php&#10;getValidUntilAttribute&#9;null&#9;null&#10;exce&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ExcelController.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/routes.php&#10;ExcelFile &#9;null&#9;null&#10;provi&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;excelcontr&#9;null&#9;null&#10;pagescon&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/PagesController.php&#10;al&#9;null&#9;null&#10;alia&#9;null&#9;null&#10;facade&#9;null&#9;null&#10;faca&#9;null&#9;null&#10;Subscription&#9;null&#9;null&#10;App\Subscription&#9;null&#9;null&#10;use App\provider&#9;null&#9;null&#10;App\subscription&#9;null&#9;null&#10;subscription&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;s&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;dixons&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/pages/dixonsAll.blade.php&#10;pages&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/PagesController.php&#10;provider&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;user&#9;null&#9;null&#10;controll&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;PagesController&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/PagesController.php&#10;menu&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/partials/appMenu.blade.php&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/routes.php&#10;SubscriptionController&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;form&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/resources/views/partials/subscriptionForm.blade.php&#10;ProviderRequest&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Requests/ProviderRequest.php&#10;controller&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;Blueprint&#9;null&#9;null&#10;Schema&#9;null&#9;null&#10;ProviderController&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;subscrip&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;subs&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/SubscriptionController.php&#10;auth&#9;null&#9;null&#10;prov&#9;FILE&#9;file://C:/xampp/htdocs/cloaked-archer/app/Http/Controllers/ProviderController.php&#10;sty&#9;FILE&#9;file://C:/xampp/htdocs/telecom/public/css/style.css&#10;styl&#9;FILE&#9;file://C:/xampp/htdocs/telecom/public/css/style.css&#10;builder&#9;null&#9;null&#10;model&#9;FILE&#9;file://C:/xampp/htdocs/telecom/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&#10;edit&#9;FILE&#9;file://C:/xampp/htdocs/telecom/resources/views/provider/edit.blade.php" />
     <property name="FullScreen" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
@@ -497,18 +489,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\articles\partials" />
+      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\articles" />
       <recent name="C:\xampp\htdocs\cloaked-archer\storage\excel" />
       <recent name="C:\xampp\htdocs\cloaked-archer\app" />
       <recent name="C:\xampp\htdocs\cloaked-archer\app\Http\Requests" />
-      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\excel" />
-      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\excel\partials" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\articles\partials" />
       <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\subscription" />
+      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views\subscription\partials" />
       <recent name="C:\xampp\htdocs\cloaked-archer\vendor\maatwebsite\excel\src" />
       <recent name="C:\xampp\htdocs\cloaked-archer\vendor\maatwebsite" />
-      <recent name="C:\xampp\htdocs\cloaked-archer\" />
-      <recent name="C:\xampp\htdocs\cloaked-archer\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -629,7 +621,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429906057557</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fix for 0 in total month price&#10;">
+      <created>1429906697752</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1429906697752</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -658,18 +656,18 @@
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39675677" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="341" y="514" width="1079" height="479" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39630836" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="341" y="514" width="1079" height="479" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22692725" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297619" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24668275" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297619" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33579725" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33713692" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.330076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -705,162 +703,16 @@
     <MESSAGE value="Small fixes&#10;Fixed upload issue&#10;Fixed Class not found issue /Excel" />
     <MESSAGE value="Finished of the HTML blocks for the output view&#10;Changes migration for database type (int -&gt; decimal)&#10;" />
     <MESSAGE value="Registration Page only visible for logged in users&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Registration Page only visible for logged in users&#10;&#10;" />
+    <MESSAGE value="Fix for 0 in total month price&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix for 0 in total month price&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Excel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.050113894" vertical-offset="2788" max-vertical-offset="7812">
-          <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6130434" vertical-offset="0" max-vertical-offset="1876">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/password.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.034782607" vertical-offset="648" max-vertical-offset="1568">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/password.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/errors/503.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1316">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15642458" vertical-offset="0" max-vertical-offset="895">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProviderRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.09130435" vertical-offset="84" max-vertical-offset="1120">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/subscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="714">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SubscriptionRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="595">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/subscriptionForm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84782606" vertical-offset="928" max-vertical-offset="1904">
-          <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/providerForm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76086956" vertical-offset="0" max-vertical-offset="920">
-          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/appMenu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4869565" vertical-offset="140" max-vertical-offset="1176">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ExcelRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6652174" vertical-offset="60" max-vertical-offset="980">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/subscription/partials/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1826087" vertical-offset="0" max-vertical-offset="920">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5478261" vertical-offset="0" max-vertical-offset="920">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/subscription/upload.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3043478" vertical-offset="0" max-vertical-offset="920">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/subscription/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39565217" vertical-offset="0" max-vertical-offset="920">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/subscription/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42608696" vertical-offset="0" max-vertical-offset="920">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/subscriptionTable.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4869565" vertical-offset="0" max-vertical-offset="920">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/providerTable.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/subscription/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3043478" vertical-offset="0" max-vertical-offset="920">
@@ -872,13 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3347826" vertical-offset="0" max-vertical-offset="920">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/flash.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42608696" vertical-offset="0" max-vertical-offset="920">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -938,18 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1946" max-vertical-offset="2839">
-          <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/dixons.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45652175" vertical-offset="0" max-vertical-offset="1456">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27391306" vertical-offset="0" max-vertical-offset="920">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,19 +853,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09130435" vertical-offset="168" max-vertical-offset="1260">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1826087" vertical-offset="0" max-vertical-offset="3976">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,38 +885,414 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59782606" vertical-offset="234" max-vertical-offset="1176">
           <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <marker date="1429902951222" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1429902951222" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429902951222" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429902951222" expanded="true" signature="-1:-1" placeholder=" Create a new authentication controller instance. ..." />
-            <marker date="1429902951222" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/dixonsAll.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/subscription/createHTML.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14782609" vertical-offset="592" max-vertical-offset="1512">
           <caret line="26" column="40" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7" vertical-offset="336" max-vertical-offset="1260">
+          <caret line="39" column="5" selection-start-line="33" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/subscription/partials/aboItem.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55567807" vertical-offset="560" max-vertical-offset="1988">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429900024728" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429900024728" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1429900024728" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430160577241" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/partials/aboItem.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24347825" vertical-offset="0" max-vertical-offset="1988">
-          <caret line="8" column="98" selection-start-line="8" selection-start-column="98" selection-end-line="8" selection-end-column="98" />
+        <state vertical-scroll-proportion="0.39565217" vertical-offset="0" max-vertical-offset="1148">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <marker date="1429210438227" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1429210438227" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_03_14_205724_create_providers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12173913" vertical-offset="252" max-vertical-offset="1176">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <marker date="1429210438233" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1429210438233" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/flash.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42608696" vertical-offset="0" max-vertical-offset="920">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <marker date="1429900024732" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024732" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Provider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.98452884" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="26" column="5" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1429472045110" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429472045110" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429472045110" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429472045110" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429472045110" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProviderRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88185656" vertical-offset="241" max-vertical-offset="1120">
+          <caret line="32" column="5" selection-start-line="22" selection-start-column="0" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <marker date="1429210438133" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438133" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429210438133" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1429210438133" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429210438133" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1429210438133" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429210438133" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ExcelRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7482419" vertical-offset="168" max-vertical-offset="980">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <marker date="1429900024696" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024696" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024696" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1429900024696" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429900024696" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1429900024696" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429900024696" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31504923" vertical-offset="0" max-vertical-offset="711">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <marker date="1430164203105" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164203105" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/subscriptionTable.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36990154" vertical-offset="17" max-vertical-offset="728">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <marker date="1429900024736" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024736" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024736" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024736" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024736" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/partials/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1429900024737" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024737" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/upload.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51195496" vertical-offset="0" max-vertical-offset="711">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <marker date="1430162286088" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162286088" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/appMenu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25738397" vertical-offset="69" max-vertical-offset="1148">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430164559136" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Subscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11814346" vertical-offset="0" max-vertical-offset="1232">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <marker date="1429900024701" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024701" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024701" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429900024701" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1429900024701" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ArticleRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6694796" vertical-offset="336" max-vertical-offset="1232">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <marker date="1430163667643" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430163667643" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1430163667643" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430163667643" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1430163667643" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430163667643" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6061885" vertical-offset="17" max-vertical-offset="868">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <marker date="1430165073739" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430165073739" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165073739" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55133617" vertical-offset="84" max-vertical-offset="1064">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <marker date="1430165125399" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430165125399" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165125399" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165125399" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430165125399" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_27_184733_create_article_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70886075" vertical-offset="168" max-vertical-offset="1260">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <marker date="1430165516604" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1430165516604" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5907173" vertical-offset="0" max-vertical-offset="711">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <marker date="1430165690489" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165690489" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/subscription/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4331927" vertical-offset="0" max-vertical-offset="711">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <marker date="1429212009543" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429212009543" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51195496" vertical-offset="0" max-vertical-offset="711">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <marker date="1430166110823" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166110823" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/partials/articlesTable.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63009846" vertical-offset="0" max-vertical-offset="711">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <marker date="1430165424090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165424090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165424090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165424090" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430165424090" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36103153" vertical-offset="1596" max-vertical-offset="4900">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <marker date="1430162783867" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430162783867" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63896847" vertical-offset="1486" max-vertical-offset="4676">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <marker date="1430166158559" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Update the specified resource in storage. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430166158559" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/articles/partials/articlesForm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6790831" vertical-offset="534" max-vertical-offset="1232">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
           <folding />
         </state>
       </provider>

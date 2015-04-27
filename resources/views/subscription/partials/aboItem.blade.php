@@ -30,7 +30,7 @@
                 - {{ $sub->subscription_duration }}
             </li>
 
-            <!--// If the there is no handset price do not show. -->
+            {{-- If the there is no handset price do not show. --}}
             @if ($sub->month_price_handset > 0)
                 <li>
                     - Abonnement {{split_number_int($sub->month_price_subscription)}}@if(split_number_fraction($sub->month_price_subscription) == 0).- p/mnd

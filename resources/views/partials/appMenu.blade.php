@@ -1,15 +1,14 @@
 <ul class="nav nav-tabs">
     <li @if ($activeMenu == "home")class="active dropdown" @endif><a href="/">Home</a></li>
-    <li @if ($activeMenu == "provider")class="active dropdown" @else class="dropdown"  @endif>
-        <a class="dropdown-toggle" href="/provider">Providers
+    <li @if ($activeMenu == "articles")class="active dropdown" @else class="dropdown"  @endif>
+        <a class="dropdown-toggle" href="/articles">Abonnementen
             <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="/provider/Tele2">Tele2</a></li>
-            <li><a href="/provider/KPN">KPN</a></li>
-            <li><a href="/provider/Hi">Hi</a></li>
-            <li><a href="/provider/T-Mobile">T-Mobile</a></li>
-            <li><a href="/provider/BEN">BEN</a></li>
-            <li><a href="/provider">Alle providers</a></li>
+            <li><a href="/articles/create">Handmatig</a></li>
+            <li><a href="/articles/download">Download Sheet</a></li>
+            <li><a href="/articles/upload">Upload Sheet</a></li>
+            <li><a href="/articles">Overzicht</a></li>
+            <li><a href="/articles/tagging">Tagging</a></li>
         </ul>
     </li>
     <li  @if ($activeMenu == "subscription") class="active dropdown" @else class="dropdown"  @endif>
@@ -20,7 +19,7 @@
             <li><a href="/subscription/download">Download Sheet</a></li>
             <li><a href="/subscription/upload">Upload Sheet</a></li>
             <li><a href="/subscription">Overzicht</a></li>
-            <li><a href="/dixons/">Creëer HTML</a></li>
+            <li><a href="/subscription/html">Creëer HTML</a></li>
         </ul>
     </li>
     <li class="dropdown pull-right">

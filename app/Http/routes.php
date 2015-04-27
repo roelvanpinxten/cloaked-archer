@@ -15,16 +15,18 @@ Route::get('/', 'PagesController@home');
 
 Route::get('home', 'PagesController@home');
 
-Route::get('dixons/{subscription}', 'PagesController@dixons');
-Route::get('dixons', 'PagesController@dixonsAll');
-
-
 Route::resource('provider', 'ProviderController');
 
 Route::get('subscription/download', 'SubscriptionController@download');
 Route::get('subscription/upload', 'SubscriptionController@upload');
+Route::get('subscription/html', 'SubscriptionController@createHTML');
 Route::post('subscription/upload/store', 'SubscriptionController@storeUpload');
 Route::resource('subscription', 'SubscriptionController');
+
+Route::get('articles/download', 'ArticlesController@download');
+Route::get('articles/upload', 'ArticlesController@upload');
+Route::post('articles/upload/store', 'ArticlesController@storeUpload');
+Route::resource('articles', 'ArticlesController');
 
 
 Route::controllers([

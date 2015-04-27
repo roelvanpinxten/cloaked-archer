@@ -24,7 +24,7 @@
 <div class="aboBody">
 @foreach ($subscription as $sub)
     @if ($sub->provider_name == "Tele2")
-        @include('pages.partials.aboItem')
+        @include('subscription.partials.aboItem')
     @endif
 @endforeach
 </div>
@@ -33,7 +33,7 @@
 <div class="aboBody">
 @foreach ($subscription as $sub)
     @if ($sub->provider_name == "KPN")
-        @include('pages.partials.aboItem')
+        @include('subscription.partials.aboItem')
     @endif
 @endforeach
 </div>
@@ -42,7 +42,7 @@
 <div class="aboBody">
 @foreach ($subscription as $sub)
     @if ($sub->provider_name == "T-Mobile")
-        @include('pages.partials.aboItem')
+        @include('subscription.partials.aboItem')
     @endif
 @endforeach
 </div>

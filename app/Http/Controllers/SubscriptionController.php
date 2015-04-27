@@ -132,6 +132,14 @@ class SubscriptionController extends Controller {
         return view('subscription.upload');
     }
 
+    public function createHTML()
+    {
+        $subscription = Subscription::all();
+
+        return view('subscription.createHTML', compact('subscription'));
+
+    }
+
     public function storeUpload(ExcelRequest $request)
     {
         \Excel::load(\Request::file('excel'), function($reader) {
